@@ -1,10 +1,14 @@
-name: Test Windows creation & build
+name: Test Windows project creation & build
 
 on: [push]
 
 jobs:
-  Create:
+  create_and_build:
+
+    name: Create and build
+
     runs-on: windows-latest
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
